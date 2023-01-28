@@ -1,0 +1,24 @@
+.rb-boolean-button-input {
+  &.rb-bordered {
+    border: $rb-boolean-button-input-border-width solid $rb-boolean-button-input-border-color;
+    border-radius: $rb-boolean-button-input-border-radius;
+  }
+
+  &.btn-outline-primary {
+    &.rb-bordered {
+      border-color: theme-color('primary');
+    }
+  }
+
+  &.is-invalid, &.rb-bordered.is-invalid {
+    border: $rb-boolean-button-input-border-width solid $form-feedback-invalid-color;
+  }
+
+  &.is-valid, &.rb-bordered.is-valid {
+    border: $rb-boolean-button-input-border-width solid $form-feedback-valid-color;
+  }
+
+  &.rb-flex {
+    flex: 1;
+  }
+}

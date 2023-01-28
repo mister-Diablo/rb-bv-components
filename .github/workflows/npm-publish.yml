@@ -1,0 +1,58 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          
+      - name: 'Installing dependecies'
+        run: |
+            npm ci
+            npm ci rimraf
+            
+      - name: 'Building'
+        run: npm run build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+          scope: '@aksultan'
+      
+      - name: 'Setup git config'
+        run: |
+          git config user.email "aksultan.zhumadil@gmail.com"
+          git config user.name "aksultan"
+          
+      - name: Get current package version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.1.0
+
+      - name: 'Publishing new version'
+        run: |
+          npm version patch -m `Release ${{ steps.package-version.outputs.current-version}} 📣`
+          npm publish
+        env:
+           NODE_AUTH_TOKEN: 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
+
+      - name: 'Pushing new version into main'
+        run: |
+          git push
+        env:
+          NODE_AUTH_TOKEN: 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

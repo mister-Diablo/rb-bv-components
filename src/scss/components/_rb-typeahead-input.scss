@@ -1,0 +1,39 @@
+.rb-typeahead-input {
+  display: block;
+
+  .rb-typeahead-inner {
+    position: relative;
+  }
+
+  .rb-typeahead-dropdown {
+    min-width: 100%;
+    position: absolute;
+
+    &.rb-empty .dropdown-menu {
+      border: none;
+      padding: 0;
+    }
+
+    .dropdown-toggle {
+      padding: 0;
+      border: none;
+    }
+
+    .dropdown-menu {
+      max-height: $rb-dropdown-input-dropdown-menu-max-height;
+      overflow: auto;
+      max-width: $rb-typeahead-input-dropdown-menu-min-width;
+      min-width: $rb-typeahead-input-dropdown-menu-min-width;
+
+      .dropdown-item {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      li.rb-current .dropdown-item {
+        font-weight: bold;
+      }
+    }
+  }
+}

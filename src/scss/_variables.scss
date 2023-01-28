@@ -1,0 +1,144 @@
+// RbBooleanButtonInput
+$rb-boolean-button-input-border-width: $btn-border-width !default;
+$rb-boolean-button-input-border-color: $border-color !default;
+$rb-boolean-button-input-border-radius: $btn-border-radius !default;
+
+// RbBooleanSingleOptionInput
+$rb-boolean-single-option-input-invalid-border-color: $danger !default;
+
+// RbColorDropdownInput
+$rb-color-dropdown-input-border-width: 1px !default;
+$rb-color-dropdown-input-border-color: $input-border-color !default;
+$rb-color-dropdown-input-icon-margin-right: 10px !default;
+
+// RbDropdownInput
+$rb-dropdown-input-dropdown-menu-max-height: 200px !default;
+$rb-dropdown-input-dropdown-menu-overflow: auto !default;
+$rb-dropdown-input-dropdown-menu-min-width: 100% !default;
+$rb-dropdown-input-dropdown-menu-icon-font-size: 14px !default;
+$rb-dropdown-input-dropdown-menu-icon-margin-right: 5px !default;
+$rb-dropdown-input-border-color: $input-border-color !default;
+$rb-dropdown-input-border-width: $input-border-width !default;
+$rb-dropdown-input-icon-font-size: 14px !default;
+$rb-dropdown-input-dropdown-toggle-text-overflow: hidden !default;
+$rb-dropdown-input-dropdown-toggle-text-align: left !default;
+$rb-dropdown-input-dropdown-indicator-width: $input-height !default;
+$rb-dropdown-input-dropdown-indicator-border-right-radius: $input-border-radius !default;
+$rb-dropdown-input-dropdown-indicator-bg: #f4f4f4 !default;
+$rb-dropdown-input-dropdown-indicator-primary-border: #3D7F59 !default;
+$rb-dropdown-input-dropdown-margin-left: 10px !default;
+$rb-dropdown-input-dropdown-width: 100% !default;
+
+// RbEmptyState
+$rb-empty-state-padding: 20px !default;
+$rb-empty-state-display: flex !default;
+$rb-empty-state-align-items: center !default;
+$rb-empty-state-text-align: center !default;
+$rb-empty-state-height: 100% !default;
+$rb-empty-state-main-icon-font-size: 78px !default;
+$rb-empty-state-title-font-size: 1.5rem !default;
+$rb-empty-state-title-color: $secondary !default;
+$rb-empty-state-description-font-size: $font-size-base !default;
+$rb-empty-state-description-color: $gray-600 !default;
+$rb-empty-state-button-text-color: $primary !default;
+$rb-empty-state-button-hover-text-color: $secondary !default;
+$rb-empty-state-max-width: 65% !default;
+$rb-empty-state-justify-content: center !default;
+$rb-empty-state-flex-direction: column !default;
+$rb-empty-state-gap: 16px !default;
+
+// RbListGroupInput
+$rb-list-group-input-item-hover-bg: white !default;
+
+// RbSingleOptionInput
+$rb-single-option-input-border-width: $btn-border-width !default;
+$rb-single-option-input-border-color: $border-color !default;
+$rb-single-option-input-border-width: $input-border-width !default;
+$rb-single-option-border-between-width: $btn-border-width !default;
+
+// RbMultiOptionInput
+$rb-multi-option-border-between-width: $btn-border-width !default;
+
+// RbMultiLangInput
+$rb-multi-lang-input-gap: 8px;
+$rb-multi-lang-input-font-size: $font-size-base !default;
+$rb-multi-lang-input-font-size-sm: $font-size-sm !default;
+$rb-multi-lang-input-line-height: $line-height-base !default;
+$rb-multi-lang-input-line-height-sm: $line-height-sm !default;
+$rb-multi-lang-input-text-secondary: $gray-600 !default;
+$rb-multi-lang-input-dropdown-item-padding: $dropdown-item-padding-y $dropdown-item-padding-y !default;
+$rb-multi-lang-input-dropdown-item-active: $secondary !default;
+$rb-multi-lang-input-border-width: $input-border-width !default;
+$rb-multi-lang-input-text-secondary: $secondary !default;
+$rb-multi-lang-input-input-group-radius: $input-border-radius !default;
+$rb-multi-lang-input-btn-width-min: 83.5px !default;
+$rb-multi-lang-input-dropdown-menu-width-min: 320px !default;
+$rb-multi-lang-input-dropdown-indicator-width: 50px !default;
+$rb-multi-lang-input-height: calc(1.5em + 0.75rem + 2px) !default;
+$rb-multi-lang-input-disabled-btn-background-color: #e9ecef !default;
+$rb-multi-lang-input-disabled-btn-border-color: #ced4da !default;
+
+// RbMultiDropdownInput
+$rb-multi-dropdown-input-counter-margin-left: 10px !default;
+$rb-multi-dropdown-input-counter-margin-right: 10px !default;
+$rb-multi-dropdown-input-counter-color: white !default;
+$rb-multi-dropdown-input-counter-height: 22px !default;
+$rb-multi-dropdown-input-counter-min-width: 22px !default;
+$rb-multi-dropdown-input-counter-bg: theme-color('primary') !default;
+$rb-multi-dropdown-input-counter-border-radius: $rb-multi-dropdown-input-counter-height / 2 !default;
+$rb-multi-dropdown-input-counter-line-height: $rb-multi-dropdown-input-counter-height !default;
+$rb-multi-dropdown-input-menu-item-active-color: theme-color('primary') !default;
+$rb-dropdown-input-dropdown-icon-font-size: $font-size-base !default;
+$rb-multi-dropdown-input-dropdown-width: 100% !default;
+$rb-multi-dropdown-input-dropdown-max-height: 200px !default;
+
+// RbPeriodInput
+$rb-period-input-dropdown-menu-max-height: 230px !default;
+
+// RbPeriodSelectionModalFrame
+$rb-period-selection-modal-frame-modal-max-width: 640px !default;
+$rb-period-selection-modal-frame-date-input-width: 270px !default;
+$rb-period-selection-modal-frame-date-input-label-font-weight: bold !default;
+$rb-period-selection-modal-frame-date-input-label-font-size: $font-size-base !default;
+$rb-period-selection-modal-frame-date-input-label-margin-bottom: 10px !default;
+
+// RbTypeaheadInput
+$rb-typeahead-input-dropdown-menu-min-width: 100% !default;
+$rb-typeahead-input-dropdown-menu-max-height: 300px !default;
+
+// RbDatePickerInput
+$rb-date-picker-input-border-color: $input-border-color !default;
+$rb-date-picker-input-border-width: $input-border-width !default;
+$rb-date-picker-input-icon-color: $body-color !default;
+$rb-date-picker-input-button-border-left-width: $input-border-width !default;
+$rb-date-picker-input-button-bg: theme-color('light') !default;
+
+// RbPagination
+$rb-pagination-icon-size: 24px !default;
+$rb-pagination-fixed-page-width-height: $rb-pagination-icon-size + 5px !default;
+$rb-pagination-gap: 8px !default;
+$rb-pagination-input-width: ($rb-pagination-fixed-page-width-height + $rb-pagination-gap) * 3 !default;
+$rb-pagination-font-size: 20px !default;
+$rb-pagination-active-page-color: $primary !default;
+$rb-pagination-dots-color: $gray-500 !default;
+$rb-pagination-search-wrapper-offset: $rb-pagination-input-width*-1 !default;
+$rb-pagination-input-border-radius: 0 !default;
+$rb-pagination-input-outline: none !default;
+$rb-pagination-input-invalid-border-width: 1px !default;
+$rb-pagination-input-invalid-border-color: $danger !default;
+$rb-pagination-search-reset-icon-color: $secondary !default;
+$rb-pagination-search-reset-icon-font-size: 14px !default;
+$rb-pagination-busy-opacity: .5 !default;
+$rb-pagination-search-background-color: $white !default;
+
+// RbMultiTypeaheadInput
+$rb-multi-typeahead-input-options-shower-position-top: $input-padding-y;
+$rb-multi-typeahead-input-options-shower-position-left: $input-padding-x;
+$rb-multi-typeahead-input-options-shower-bg: $input-bg;
+$rb-multi-typeahead-input-options-shower-disabled-bg: $input-disabled-bg;
+
+// RbTagInput
+$rb-tag-input-tag-bg: #F4F4F4;
+$rb-tag-input-tag-icon-close: #AAABAD;
+$rb-tag-input-tag-text: $secondary !default;
+$rb-tag-input-bdrs: 0.25rem;

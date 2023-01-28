@@ -1,0 +1,33 @@
+.rb-color-dropdown-input {
+  &.rb-no-label {
+    .dropdown-menu {
+      min-width: 100%;
+
+      li {
+        padding-left: 0;
+        padding-right: 0;
+
+        a {
+          text-align: center;
+          padding-left: $btn-padding-x;
+          padding-right: $btn-padding-x;
+        }
+      }
+    }
+
+    .dropdown-toggle > .rb-icon {
+      margin-right: $btn-padding-x;
+    }
+  }
+
+  .dropdown-menu {
+    li .dropdown-item {
+      padding-left: $btn-padding-x;
+      padding-right: $btn-padding-x;
+    }
+  }
+
+  .dropdown-toggle > .rb-icon {
+    margin-right: $rb-color-dropdown-input-icon-margin-right;
+  }
+}

@@ -1,0 +1,99 @@
+.rb-multi-lang-input {
+  height: $rb-multi-lang-input-height;
+
+  .rb-text-container {
+    gap: $rb-multi-lang-input-gap;
+  }
+
+  .dropdown-menu {
+    will-change: unset !important;
+    transform: unset !important;
+    width: 100%;
+  }
+
+  .b-dropdown {
+    width: 100%;
+    border-width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .rb-text-primary {
+    font-size: $rb-multi-lang-input-font-size;
+    line-height: $rb-multi-lang-input-font-size;
+  }
+
+  .rb-text-secondary {
+    font-size: $rb-multi-lang-input-font-size-sm;
+    line-height: $rb-multi-lang-input-line-height-sm;
+    color: $rb-multi-lang-input-text-secondary;
+  }
+
+  .rb-lang-type {
+    color: theme-color('primary');
+  }
+
+  .rb-lang-text {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &.is-valid {
+    .btn, .form-control {
+      border: $rb-multi-lang-input-border-width solid $form-feedback-valid-color;
+    }
+
+    .btn {
+      border-left-width: 0;
+    }
+  }
+
+  &.is-invalid {
+    .btn, .form-control {
+      border: $rb-multi-lang-input-border-width solid $form-feedback-invalid-color;
+    }
+
+    .btn {
+      border-left-width: 0;
+    }
+  }
+
+  .btn {
+    border: $rb-multi-lang-input-border-width solid $input-border-color;
+    border-radius: $rb-multi-lang-input-input-group-radius;
+  }
+
+  .btn {
+    border-left-width: 0;
+  }
+
+  .btn {
+    min-width: $rb-multi-lang-input-btn-width-min;
+    border-top-right-radius: $rb-multi-lang-input-input-group-radius !important;
+    border-bottom-right-radius: $rb-multi-lang-input-input-group-radius !important;
+  }
+
+  .dropdown-item {
+    padding: $rb-multi-lang-input-dropdown-item-padding;
+
+    &.active, &:active {
+      color: $rb-multi-lang-input-dropdown-item-active;
+    }
+  }
+  .disabled-btn {
+    background-color: $rb-multi-lang-input-disabled-btn-background-color !important;
+    border-color: $rb-multi-lang-input-disabled-btn-border-color !important;
+  }
+
+  .rb-icon {
+    &:before {
+      line-height: 1;
+    }
+  }
+}

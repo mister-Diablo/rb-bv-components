@@ -1,0 +1,210 @@
+.rb-dropdown-input {
+  .dropdown-menu {
+    width: $rb-dropdown-input-dropdown-width;
+    transform: none !important;
+    will-change: unset !important;
+    top: 100% !important;
+    max-height: $rb-dropdown-input-dropdown-menu-max-height;
+    overflow-y: scroll;
+    .show {
+      max-height: $rb-dropdown-input-dropdown-menu-max-height;
+      overflow: $rb-dropdown-input-dropdown-menu-overflow;
+      min-width: $rb-dropdown-input-dropdown-menu-min-width;
+    }
+  }
+
+  &.dropup .dropdown-menu {
+    top: auto !important;
+    bottom: 100% !important;
+  }
+
+  &:not(.rb-dropdown-link-input) {
+    &.rb-bordered {
+      .dropdown-toggle {
+        border: $rb-dropdown-input-border-width solid $rb-dropdown-input-border-color;
+      }
+    }
+
+    &.is-invalid .dropdown-toggle,
+    &.is-invalid.rb-bordered .dropdown-toggle {
+      border: $rb-dropdown-input-border-width solid $form-feedback-invalid-color;
+    }
+
+    &.is-valid .dropdown-toggle,
+    &.is-valid.rb-bordered .dropdown-toggle {
+      border: $rb-dropdown-input-border-width solid $form-feedback-valid-color;
+    }
+  }
+
+  .dropdown-toggle,
+  &__split .btn-block {
+    display: flex;
+    align-items: center;
+    overflow: $rb-dropdown-input-dropdown-toggle-text-overflow;
+    text-align: $rb-dropdown-input-dropdown-toggle-text-align;
+    padding-right: $rb-dropdown-input-dropdown-indicator-width;
+
+    .rb-icon {
+      font-size: $rb-dropdown-input-icon-font-size;
+    }
+  }
+
+  .dropdown-item {
+    .rb-icon {
+      font-size: $rb-dropdown-input-dropdown-menu-icon-font-size;
+      margin-right: $rb-dropdown-input-dropdown-menu-icon-margin-right;
+    }
+
+    .rb-text {
+      flex: 1;
+      overflow: $rb-dropdown-input-dropdown-toggle-text-overflow;
+      margin-right: $rb-dropdown-input-dropdown-margin-left;
+      display: inline-block;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+
+  .btn-block .rb-dropdown-indicator {
+    right: $rb-dropdown-input-border-width;
+    top: $rb-dropdown-input-border-width;
+    height: add($btn-line-height, 2 * $btn-padding-y);
+    width: $rb-dropdown-input-dropdown-indicator-width;
+  }
+
+  .rb-dropdown-indicator {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: $rb-dropdown-input-dropdown-indicator-width;
+    align-items: center;
+    border-top-right-radius: $rb-dropdown-input-dropdown-indicator-border-right-radius;
+    border-bottom-right-radius: $rb-dropdown-input-dropdown-indicator-border-right-radius;
+    background-color: $rb-dropdown-input-dropdown-indicator-bg;
+
+    .rb-icon {
+      vertical-align: middle;
+      flex: 1;
+      text-align: center;
+      font-size: $rb-dropdown-input-dropdown-icon-font-size;
+    }
+  }
+
+  &.rb-no-dropdown-indicator {
+    .dropdown-toggle .rt-text {
+      margin-right: 0;
+    }
+  }
+
+  &__split {
+    button.dropdown-toggle {
+      display: none;
+    }
+
+    .btn-block {
+      box-shadow: none;
+    }
+
+    &:not(.rb-dropdown-link-input) {
+      &.rb-bordered {
+        .btn-block {
+          border: $rb-dropdown-input-border-width solid $rb-dropdown-input-border-color;
+        }
+      }
+
+      &.is-invalid .btn-block,
+      &.is-invalid.rb-bordered .btn-block {
+        border: $rb-dropdown-input-border-width solid $form-feedback-invalid-color;
+      }
+
+      &.is-valid .btn-block,
+      &.is-valid.rb-bordered .btn-block {
+        border: $rb-dropdown-input-border-width solid $form-feedback-valid-color;
+      }
+    }
+
+    .btn-primary {
+      .rb-dropdown-indicator {
+        border-left: 1px solid $rb-dropdown-input-dropdown-indicator-primary-border;
+        background: $primary;
+      }
+    }
+  }
+}
+
+.rb-dropdown-link-input {
+  vertical-align: baseline;
+
+  &.dropdown.rb-dropdown-input {
+    display: inline;
+    width: auto;
+  }
+
+  button.dropdown-toggle {
+    border: none;
+    vertical-align: baseline;
+    width: auto;
+    padding: 0;
+    display: inline;
+    flex: none;
+    line-height: unset;
+    background-color: transparent;
+
+    &::after {
+      margin-top: 0;
+    }
+
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+    }
+
+    .rb-text {
+      margin-right: 0;
+    }
+  }
+
+  .was-validated &:invalid,
+  &.is-invalid,
+  .wax-validated &:valid,
+  &.is-valid {
+    .btn {
+      border: none;
+    }
+  }
+
+  .was-validated &:invalid,
+  &.is-invalid {
+    .btn .rb-text {
+      color: $form-feedback-invalid-color;
+    }
+  }
+
+  .wax-validated &:valid,
+  &.is-valid {
+    .btn .rb-text {
+      color: $form-feedback-valid-color;
+    }
+  }
+
+  .btn.btn-light.dropdown-toggle:focus,
+  .btn.btn-light.dropdown-toggle:active,
+  &.show > .btn.btn-light.dropdown-toggle {
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .rb-dropdown-indicator {
+    background-color: transparent;
+    position: unset;
+    right: unset;
+    top: unset;
+    display: inline;
+  }
+  .tooltip {
+    position: fixed;
+  }
+}

@@ -1,0 +1,9 @@
+.rb-period-input {
+  .dropdown-toggle {
+    border: none;
+  }
+
+  .rb-dropdown .dropdown-menu.show {
+    max-height: $rb-period-input-dropdown-menu-max-height;
+  }
+}

@@ -1,0 +1,67 @@
+.rb-tag-multi-select-input {
+  position: relative;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+
+  .form-control {
+    border: unset;
+  }
+
+  .form-control:focus {
+    box-shadow: unset;
+  }
+
+  .options {
+    position: absolute;
+    top: $input-height;
+  }
+
+  .selected-items {
+    display: flex;
+    padding: 0 5px 2px 5px;
+    flex-wrap: wrap;
+    a {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      max-width: max-content;
+      overflow: hidden;
+      span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        //max-width: 80%;
+        display: inline-block;
+      }
+      button{
+        display: flex;
+      }
+    }
+  }
+
+  .remove-btn {
+    padding: 0;
+    border: none;
+  }
+
+  .rb-tag {
+    vertical-align: middle;
+  }
+
+  &.is-invalid {
+    border: $input-border-width solid $form-feedback-invalid-color;
+  }
+
+  &.is-valid {
+    border: $input-border-width solid $form-feedback-valid-color;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+
+    span {
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
